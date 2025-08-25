@@ -82,6 +82,37 @@ Features include:
 - Payment methods
 - Customer & driver ratings
 
+## Workflow
+1. Data Collection
+- Pulled dataset from Kaggle.
+
+2. Data Cleaning & Preparation (Python)
+Used pandas & numpy for:
+- Handling missing values
+- Data encoding for categorical fields
+- Checking for duplicates & inconsistencies
+
+3. Data Validation (SQL Server)
+Queried the dataset using SQL to:
+- Validate KPIs (bookings, cancellations, revenue)
+- Cross-check data accuracy
+- Aggregate and filter data for analysis
+
+4. Data Modeling & Profiling (Power BI)
+- Performed data profiling & datatype conversions
+- Built calculated columns & measures with DAX
+- Created new columns where necessary
+- created DAX measures for calculations and KPI calculations
+
+5. Dashboard Design (Power BI)
+Built a multi-page interactive dashboard with insights into:
+- Ride Volume & Demand Trends → bookings, peak hours, hotspots
+- Booking Status & Cancellations → completion rate, reasons
+- Revenue Insights → by vehicle type, location, and payment method
+- Service Efficiency → wait times (VTAT, CTAT) & correlation with cancellations
+- Customer & Driver Experience → ratings, satisfaction, and impact on performance
+
+
 
 
 
