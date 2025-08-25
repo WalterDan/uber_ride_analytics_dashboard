@@ -8,7 +8,7 @@
 
 * [Project Overview](#project-overview)
 * [Aim and Objectives](#aim-and-objectives)
-
+* [Data Sources](#data-sources)
 
 <img width="576" height="325" alt="WB Dash" src="https://github.com/WalterDan/uber_ride_analytics_dashboard/blob/1641f2301cc9f6d137aacfa5470bc51932eaa9a4/Screenshot%202025-08-21%20012654.png" />
 
@@ -22,52 +22,65 @@ The aim of this project is to analyze Uber ride data to uncover patterns in dema
 
 * Objectives*
 
-- Data Acquisition & Preparation:
-Source the Uber dataset from Kaggle (150,000 rows × 21 columns).
+1.  Data Acquisition & Preparation:
+- Source the Uber dataset from Kaggle (150,000 rows × 21 columns).
 
-Clean, encode, and transform the data using Python to ensure accuracy and consistency.
+- Clean, encode, and transform the data using Python to ensure accuracy and consistency.
 
-- Data Validation & Querying:
-Use SQL Server to query, validate, and cross-check key performance indicators (KPIs).
+2. Data Validation & Querying:
+- Use SQL Server to query, validate, and cross-check key performance indicators (KPIs).
 
-Ensure that the metrics align with real-world ride-hailing business logic.
+- Ensure that the metrics align with real-world ride-hailing business logic.
 
-- Dashboard Development
+3. Dashboard Development
 
-Design an interactive Power BI dashboard that highlights:
+- Design an interactive Power BI dashboard that highlights:
 
-Ride volume and demand trends
+- Ride volume and demand trends
 
-Booking completion vs cancellations
+- Booking completion vs cancellations
 
-Revenue by vehicle type, location, and payment method
+- Revenue by vehicle type, location, and payment method
 
-Service efficiency (wait times, trip distances)
+- Service efficiency (wait times, trip distances)
 
-Customer and driver ratings.
+- Customer and driver ratings.
 
+4. Insight Generation
 
-- Insight Generation
+- Identify peak demand hours and hotspots for ride activity.
 
-Identify peak demand hours and hotspots for ride activity.
+- Examine the relationship between wait times, cancellations, and ratings.
 
-Examine the relationship between wait times, cancellations, and ratings.
+- Explore the impact of payment preferences and vehicle type distribution on revenue.
 
-Explore the impact of payment preferences and vehicle type distribution on revenue.
+5. Business Value
 
-Business Value
+- Provide actionable insights that can help ride-hailing platforms:
 
-Provide actionable insights that can help ride-hailing platforms:
+- Optimize driver allocation
 
-Optimize driver allocation
+- Improve customer satisfaction
 
-Improve customer satisfaction
+- Reduce cancellations
 
-Reduce cancellations
+- Enhance revenue strategies
 
-Enhance revenue strategies
+## Data Sources
 
-
+Source: Kaggle – Uber Dataset
+Size: 150,000 rows × 21 columns
+Features include:
+- Booking details (time, date, status)
+- Customer ID
+- Pickup & drop-off locations
+- Vehicle types
+- Distance & Book Value
+- Avg VTAT - Average vehicle waiting time
+- Avg CTAT - Average Customer waiting time
+- Driver & customer cancellation status and reason for cancellation
+- Payment methods
+- Customer & driver ratings
 
 
 
