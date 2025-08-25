@@ -10,4 +10,4 @@ This project explores Uber ride data to uncover trends in demand, customer & dri
 ### The aim is to demonstrate end-to-end data analysis skills — from data cleaning and querying, to KPI validation, and building a professional interactive Power BI dashboard.
 
 
-<img width="576" height="325" alt="WB Dash" src="" />
+<img width="576" height="325" alt="WB Dash" src="https://github.com/WalterDan/uber_ride_analytics_dashboard/blob/1641f2301cc9f6d137aacfa5470bc51932eaa9a4/Screenshot%202025-08-21%20012654.png" />
