@@ -12,6 +12,7 @@
 * [Work Flow](#workflow)
 * [Key Insights](#key-insights)
 * [Visualization](#visualization)
+* [Data Cleaning with Python](#data-cleaning-&-preprocessing)
 
 <img width="576" height="325" alt="WB Dash" src="https://github.com/WalterDan/uber_ride_analytics_dashboard/blob/1641f2301cc9f6d137aacfa5470bc51932eaa9a4/Screenshot%202025-08-21%20012654.png" />
 
@@ -131,5 +132,78 @@ Built a multi-page interactive dashboard with insights into:
 
 ## 📊 Visualization
 
+<img width="576" height="325" alt="WB Dash" src="https://github.com/WalterDan/uber_ride_analytics_dashboard/blob/b7d1095103a9b7e7fd967cb76fbcd1fe2a3ccadc/Screenshot%202025-08-21%20013506.png" />
 
 
+## 🧹 Data Cleaning & Preprocessing
+
+- This section outlines the steps taken to clean and prepare the Uber dataset (150,000 rows × 21 columns) for analysis.
+```
+python
+
+# Importing Libraries & Dataset
+import pandas as pd
+import numpy as np
+
+# Load dataset
+uber = pd.read_csv('Uber_data.csv')
+uber
+```
+
+## Exploratory Data Checks
+
+- Check dataset information, shape, descriptive stats, and missing values.
+```
+uber_copy = uber.copy()
+uber_copy['Cancelled Rides by Driver'] = np.where(
+    uber_copy['Cancelled Rides by Driver'].isnull(), 
+    0, 
+    uber_copy['Cancelled Rides by Driver']
+)
+```
+## Cancelled Rides by Customer & Reasons
+```
+uber_copy['Cancelled Rides by Customer'] = uber_copy['Cancelled Rides by Customer'].fillna(0)
+uber_copy['Reason for cancelling by Customer'] = uber_copy['Reason for cancelling by Customer'].fillna('Did not cancel')
+
+```
+
+## Driver Cancellation Reason
+```
+uber_copy['Incomplete Rides'] = uber_copy['Incomplete Rides'].fillna(0)
+uber_copy['Incomplete Rides Reason'] = uber_copy['Incomplete Rides Reason'].fillna('Ride Completed')
+
+```
+## Incomplete Rides & Reasons
+
+```
+uber_copy['Incomplete Rides'] = uber_copy['Incomplete Rides'].fillna(0)
+uber_copy['Incomplete Rides Reason'] = uber_copy['Incomplete Rides Reason'].fillna('Ride Completed')
+
+```
+## Booking Value & Ride Distance
+
+```
+uber_copy['Booking Value'] = uber_copy['Booking Value'].fillna(0)
+uber_copy['Ride Distance'] = uber_copy['Ride Distance'].fillna(0)
+
+```
+
+## Payment Method
+```
+uber_copy['Payment Method'] = uber_copy['Payment Method'].fillna('No payment made')
+```
+
+## Verify Cleaned Data
+```
+uber_copy.isnull().sum()
+uber_copy.nunique()
+
+```
+
+## Save Cleaned Dataset
+
+```
+uber_copy.to_csv('Uber_data_cleaned.csv', index=False)
+
+```
