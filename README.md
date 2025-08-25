@@ -207,3 +207,5 @@ uber_copy.nunique()
 uber_copy.to_csv('Uber_data_cleaned.csv', index=False)
 
 ```
+
+Interact with the dashboard here >>> https://app.powerbi.com/reportEmbed?reportId=48762e6e-672c-4d98-9603-d350a94d0541&autoAuth=true&ctid=ba481f95-fcf8-4ec1-8ca5-52eb163baaa8
