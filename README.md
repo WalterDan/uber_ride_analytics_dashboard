@@ -22,19 +22,17 @@ The aim of this project is to analyze Uber ride data to uncover patterns in dema
 
 * Objectives*
 
-Data Acquisition & Preparation
-
+- Data Acquisition & Preparation:
 Source the Uber dataset from Kaggle (150,000 rows × 21 columns).
 
 Clean, encode, and transform the data using Python to ensure accuracy and consistency.
 
-Data Validation & Querying
-
+- Data Validation & Querying:
 Use SQL Server to query, validate, and cross-check key performance indicators (KPIs).
 
 Ensure that the metrics align with real-world ride-hailing business logic.
 
-Dashboard Development
+- Dashboard Development
 
 Design an interactive Power BI dashboard that highlights:
 
@@ -46,9 +44,10 @@ Revenue by vehicle type, location, and payment method
 
 Service efficiency (wait times, trip distances)
 
-Customer and driver ratings
+Customer and driver ratings.
 
-Insight Generation
+
+- Insight Generation
 
 Identify peak demand hours and hotspots for ride activity.
 
@@ -68,28 +67,6 @@ Reduce cancellations
 
 Enhance revenue strategies
 
-
-
-
-
-
-- Automate Data Retrieval
-Collect socio-economic data directly from the World Bank API to ensure accuracy, reproducibility, and transparency.
-
-- Clean and Transform Data
-Normalize values (e.g., monetary indicators into billions), restructure datasets, and handle missing values to prepare analysis-ready data.
-
-- Perform Exploratory Data Analysis (EDA)
-Investigate distributions, detect outliers, and explore correlations between indicators such as GDP growth, inflation, and poverty.
-
-- Develop Comparative Insights
-Compare socio-economic performance across G20 countries, identifying both convergences and divergences.
-
-- Build an Interactive Dashboard
-Design a Power BI dashboard that allows stakeholders to explore economic trends, filter by country, and answer guiding analytical questions.
-
-- Support Policy and Research Discussions
-Provide a data-driven foundation for understanding how global economic giants are balancing growth with social development.
 
 
 
