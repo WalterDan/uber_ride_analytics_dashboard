@@ -7,8 +7,11 @@
 ## Table of Contents
 
 * [Project Overview](#project-overview)
-* [Aim and Objectives](#aim-and-objectives)
+* [Aim and Objectives](#aim-and-objective)
 * [Data Sources](#data-sources)
+* [Work Flow](#workflow)
+* [Key Insights](#key-insights)
+* [Visualization](#visualization)
 
 <img width="576" height="325" alt="WB Dash" src="https://github.com/WalterDan/uber_ride_analytics_dashboard/blob/1641f2301cc9f6d137aacfa5470bc51932eaa9a4/Screenshot%202025-08-21%20012654.png" />
 
@@ -112,7 +115,21 @@ Built a multi-page interactive dashboard with insights into:
 - Service Efficiency → wait times (VTAT, CTAT) & correlation with cancellations
 - Customer & Driver Experience → ratings, satisfaction, and impact on performance
 
+## 📊 Key Insights
 
+- Peak ride demand occurs during morning & evening rush hours and on weekdays, constituting over 71% of the completed bookings.
+
+- Autos generate the highest revenue, while bikes dominate short-distance trips.
+
+- 45% of Revenue was made through UPI payments, followed by cash making at 25%.
+
+## 🛠 Tech Stack
+- Python (pandas, numpy) → Data Cleaning & Encoding
+- SQL Server → KPI Validation & Querying
+- Power BI → Data Profiling, Modeling & Dashboard Creation
+- DAX → Calculated Measures & Insights
+
+## 📊 Visualization
 
 
 
